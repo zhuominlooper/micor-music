@@ -1,4 +1,4 @@
-// pages/index/index.js
+
 import request from '../../api/request'
 Page({
   data: {
@@ -23,7 +23,7 @@ Page({
   getTopData(){
     let promisePool=[]
      for(let i=0;i<6;i++){
-      promisePool.push( request('/top/list',{idx:i}))
+      promisePool.push( request('/top/list',{id:i}))
      }
      Promise.all(promisePool).then(res=>{
        console.log('res',res)

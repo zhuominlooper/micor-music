@@ -48,7 +48,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-// background: linear-gradient(left, red, black);
+ background: linear-gradient(left, red, black);
   background: rgba(0, 0, 0, .7);
   height: 240rpx;
   color: #f7d680;
@@ -210,4 +210,30 @@
 }
 .cardList .card-item .more {
   float: right;
+}
+/* 最近播放 */
+.recentScroll{
+ display: flex;
+ height: 180rpx;
+}
+.recentItem{
+  margin-right: 16rpx;
+}
+.recentItem image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+}
+.recentItem text{
+  display: inline-block;
+  width: 120rpx; 
+  font-size: 20rpx;
+  color: rgb(136, 136, 136);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.noRecentPlay{
+  text-align: center;
+  color: #333;
 }

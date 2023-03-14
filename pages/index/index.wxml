@@ -8,7 +8,7 @@
 </view>
 <!-- 导航图标 -->
 <view class="navContainer">
-  <view class="navItem">
+  <view class="navItem" bindtap="onGotoRecommend">
     <text class="iconfont icon-meirituijian"></text>
     <text>每日推荐</text>
   </view>

@@ -1,0 +1,24 @@
+{
+  "name": "micor-music",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuominlooper/micor-music.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhuominlooper/micor-music/issues"
+  },
+  "homepage": "https://github.com/zhuominlooper/micor-music#readme",
+  "dependencies": {
+    "moment": "^2.29.4",
+    "pubsub-js": "^1.9.4"
+  }
+}

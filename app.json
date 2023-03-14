@@ -1,9 +1,14 @@
 {
-  "pages": [
+  "pages": [  
+    "pages/index/index",
+     "pages/search/search",
+     "pages/recommendSong/recommendSong",
+    "pages/songDetail/songDetail",
     "pages/video/video",
     "pages/personal/personal",
-    "pages/login/login",
-    "pages/index/index"
+    "pages/login/login"
+
+   
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,6 +16,7 @@
     "navigationBarTitleText": "微云音乐",
     "navigationBarTextStyle": "white"
   },
+  "requiredBackgroundModes": ["audio","location"],
   "tabBar": {
     "color": "#333",
     "selectedColor": "#e24b31",

@@ -1,0 +1,71 @@
+.header{
+  position: relative;
+}
+.header image{
+  width: 100%;
+  height: 300rpx;
+}
+.header .date{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+.date .day{
+  color: #fff;
+  font-size: 40rpx;
+}
+.date .month{
+  color: #fff;
+  font-size: 40rpx;
+}
+
+.lisContainer{
+  position: relative;
+  top:-20rpx;
+  padding: 0 20rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+}
+.lisContainer .listHeader{
+  padding: 10rpx 4rpx;
+}
+.listHeader .changeMore{
+  float: right;
+}
+/* 滚动区 */
+.listScroll{
+  height: calc(100vh - 380rpx);
+}
+.scrollItem{
+  display: flex;
+  position: relative;
+  margin-bottom: 24rpx;
+}
+.scrollItem image{
+ width: 80rpx;
+ height: 80rpx;
+ border-radius: 8rpx;
+}
+.scrollItem .musicInfo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 24rpx;
+}
+ .scrollItem .musicInfo text{
+  font-size: 24rpx;
+   height: 40rpx;
+   line-height: 40rpx;
+   width: 450rpx;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+ }
+  .scrollItem  .iconfont{
+    width: 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    position: absolute;
+    right: 0;
+    text-align: right;
+  }

@@ -12,6 +12,11 @@ Page({
   onReady() {
     this.getVideoGroupData();
   },
+  onsearchSong(){
+    wx.navigateTo({
+      url: '/pages/search/search',
+    })
+  },
   //获取导航数据
   getVideoGroupData() {
     request('/video/group/list').then((res) => {

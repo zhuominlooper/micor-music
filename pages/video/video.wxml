@@ -1,7 +1,7 @@
 <view class="viewContainer">
   <view class="header">
     <image src="/static/images/video/video.jpg"></image>
-    <view class="search">搜索歌曲</view>
+    <view class="search" bindtap="onsearchSong">搜索歌曲</view>
     <image src="/static/images/logo.png"></image>
   </view>
 </view>

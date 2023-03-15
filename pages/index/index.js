@@ -22,8 +22,14 @@ Page({
   //跳转到每日推荐
   onGotoRecommend() {
     wx.navigateTo({
-      url: '/pages/recommendSong/recommendSong',
+      url: '/songPackge/pages/recommendSong/recommendSong',
     });
+  },
+  //跳转到用户openid获取页面
+  onGotoCode(){
+    wx.navigateTo({
+      url: '/otherPackge/pages/userCode/userCode',
+    })
   },
   getTopData() {
     let promisePool = [];

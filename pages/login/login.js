@@ -46,7 +46,7 @@ Page({
   },
   handleCookie(cookieStr){
     let allCookieArr=cookieStr.split('Path=/;;')
-    let VideoCookieArr=allCookieArr[2].split('Path=/;')
+    let VideoCookieArr=allCookieArr[0].split('Path=/;')
     wx.setStorageSync('cookie', VideoCookieArr[0])
   },
   getuserInfo() {

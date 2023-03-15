@@ -1,0 +1,3 @@
+<view>
+<button bindtap="onGetId">获取用户openId</button>
+</view>

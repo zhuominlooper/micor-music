@@ -1,14 +1,31 @@
 {
-  "pages": [  
+  "pages": [
     "pages/index/index",
-     "pages/search/search",
-     "pages/recommendSong/recommendSong",
-    "pages/songDetail/songDetail",
+    "pages/search/search",
     "pages/video/video",
     "pages/personal/personal",
     "pages/login/login"
-
-   
+  ],
+  "preloadRule": {
+    "pages/index/index":{
+      "packages": ["songPackge","other"]
+    }
+  },
+  "subPackages": [
+    {
+      "root":"songPackge",
+      "pages": [
+        "pages/recommendSong/recommendSong",
+        "pages/songDetail/songDetail"
+      ]
+    },
+    {
+      "root":"otherPackge",
+      "name":"other",
+      "pages": [
+        "pages/userCode/userCode"
+      ]
+    }
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,7 +33,10 @@
     "navigationBarTitleText": "微云音乐",
     "navigationBarTextStyle": "white"
   },
-  "requiredBackgroundModes": ["audio","location"],
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
   "tabBar": {
     "color": "#333",
     "selectedColor": "#e24b31",
